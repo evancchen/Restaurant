@@ -1,0 +1,24 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "Hunter Cafe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --progress --mode=production",
+    "watch": "webpack --progress --watch"
+  },
+  "keywords": [
+    "Restaurant",
+    "Page"
+  ],
+  "author": "Evan Chen",
+  "license": "ISC",
+  "devDependencies": {
+    "@webpack-cli/generators": "^2.5.0",
+    "localhost": "^0.4.1",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.2"
+  }
+}
