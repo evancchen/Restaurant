@@ -5,9 +5,9 @@ function createHome() {
     chefImage.src = "images/home.webp";
     chefImage.alt = "Chef";
     home.appendChild(createParagraph("First cafe for hunters"));
-    home.appendChild(createParagraph("Made with passion since 1908"));
+    home.appendChild(createParagraph("Started since Greed Island's release."));
     home.appendChild(chefImage);
-    home.appendChild(createParagraph("Order online or visit us!"));
+    home.appendChild(createParagraph("Order from us now!"));
     return home;
 }
 
