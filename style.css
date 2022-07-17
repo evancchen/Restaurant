@@ -15,6 +15,7 @@
 
 body {
     font-size: 1.6rem;
+    font-family: 'Montserrat', cursive;
     color: var(--font-color);
     background: url(images/background.png);
     background-attachment: fixed;
@@ -88,6 +89,7 @@ button {
     font-size: 2rem;
     background-color: var(--background-light);
     border: 1px solid var(--border-color);
+    border-radius: 5%;
 }
 
 .home {
@@ -109,17 +111,89 @@ button {
     margin-top: 3rem;
     margin-bottom: 3rem;
     border-radius: 20%;
+    opacity: 90%;
 }
 
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    animation: fadeIn 1.5s;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: var(--background-light);
+    transition: background-color 0.3s;
+    border-radius: 10%;
+}
+
+.menu-item:hover {
+    background-color: var(--background-light-hover);
+}
+
+.menu-item img {
+    width: 70%;
+}
+
+.menu-item h3 {
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.menu-item p {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 525px;
+    width: 618px;
+    animation: fadeIn 1.5s;
+}
+
+.contact p {
+    width: 100%;
+    padding: 1rem;
+}
+
+.contact img {
+    max-height: 420px;
+    padding: 1rem;
+    opacity: 90%;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 @media (max-width: 700px) {
-    .home, .contact {
+
+    .home,
+    .contact {
         height: 100%;
         width: 100%;
     }
+
     .menu {
         grid-template-columns: 1fr;
     }
+
     .menu img {
         width: 50%;
     }
@@ -129,6 +203,7 @@ button {
     html {
         font-size: 57.5%;
     }
+
     .home img {
         width: 80%;
     }
